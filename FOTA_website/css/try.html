@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publish Message to HiveMQTT</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <button onclick="publishMessage()">Publish Message</button>
+
+  <script>
+    function publishMessage() {
+      const host = "78d2ba508d0040b1b8fc1b841ba0c7b9.s1.eu.hivemq.cloud";
+      const port = 8883;
+      const clientID = "STMID";
+      const username = "ITI_NaaVi_Web";
+      const password = "Web_12345";
+      const topic = "sensor/heat";
+      const message = "hello";
+
+      const client = new Paho.MQTT.Client(host, port, clientID);
+
+      // set callback handlers
+      client.onConnectionLost = onConnectionLost;
+      client.onMessageArrived = onMessageArrived;
+
+      const options = {
+        useSSL: true,
+        userName: username,
+        password: password,
+        onSuccess: onConnect,
+        onFailure: onFailure
+      };
+
+      // connect the client
+      client.connect(options);
+
+      // called when the client connects
+      function onConnect() {
+        console.log("Connected");
+        // Once a connection has been made, make a subscription and send a message.
+        client.publish(topic, message);
+        console.log("Message published:", message);
+        // Disconnect after publishing
+        client.disconnect();
+      }
+
+      // called when the client loses its connection
+      function onConnectionLost(responseObject) {
+        if (responseObject.errorCode !== 0) {
+          console.log("Connection lost:", responseObject.errorMessage);
+        }
+      }
+
+      // called when a message arrives
+      function onMessageArrived(message) {
+        console.log("Message arrived:", message.payloadString);
+      }
+
+      function onFailure(message) {
+        console.log("Connection failed:", message.errorMessage);
+      }
+    }
+  </script>
+</body>
+</html>

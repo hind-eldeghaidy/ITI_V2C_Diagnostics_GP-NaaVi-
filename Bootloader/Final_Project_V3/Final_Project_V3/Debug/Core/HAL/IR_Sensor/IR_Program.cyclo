@@ -1,0 +1,2 @@
+../Core/HAL/IR_Sensor/IR_Program.c:13:9:IR_u8Read_RightIR	1
+../Core/HAL/IR_Sensor/IR_Program.c:19:9:IR_u8Read_LeftIR	1

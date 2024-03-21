@@ -1,0 +1,2 @@
+../Core/HAL/Buzzer/Buzzer_Program.c:13:6:Buzzer_ON	8	static
+../Core/HAL/Buzzer/Buzzer_Program.c:19:6:Buzzer_Off	8	static

@@ -1,0 +1,325 @@
+.carousel-caption h5{
+    font-size: 60px;
+    font-family:serif;
+    color:black;
+    margin-bottom: 210px;
+    opacity: .8;
+    
+}
+.logo h4{
+    color:white;
+    font-style: italic;
+   font-size: 90px;
+   text-align: center;
+   justify-content: center;
+
+}
+.my_nav{
+    background-color: rgba(182, 191, 196, 0.178);
+    height: 80px;
+  }
+.nav-link h6{
+    color:black;
+    font-style: italic;
+ 
+}
+
+
+.icon h3{
+    font-size:larger;
+    font-style: italic;
+    padding: 10px;
+
+}
+
+.row1{
+    margin-top: 35px;
+}
+
+.row1 h1{
+    font-family: Monospace;
+    color:#B10923;
+    font-style: italic;
+}
+
+/* start hover over images with style*/
+.hover_area {
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    
+}
+
+.hover_img {
+    overflow: hidden;
+    position: relative;
+}
+
+.hover_img img {
+    width: 100%;
+	height: 300px;
+    transition: all .5s;
+    
+}
+
+.hover_area:hover .hover_img img {
+    transform: translateY(-360px);
+}
+
+.hover_area:hover .hover_overlay {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.hover_area:hover .hover_content {
+    opacity: 1;
+}
+
+.hover_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: black;
+    transform: translateY(-350px);
+    transition: all .5s;
+}
+
+.hover_content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+}
+
+
+.hover_content h4 {
+    color: #fff;
+}
+
+.hover_content a {
+    margin-top: 20px;
+}
+
+/* end hover over images with style*/
+
+
+/*button to log in in row3*/
+.button{
+    width: 350px;
+    transition:0.7s;
+    height: 40px;
+    border-radius: 15px;
+
+}
+.button:hover
+{
+    background: #B10923 ;
+    border-radius: 25px;
+    transition: ease-in-out 0.7s;
+    height: 45px;
+    width: 400px;
+    
+    
+}
+
+/*navbar brand*/
+
+.navbar-brand
+{
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+    justify-content: center;
+    text-align: center;
+}
+/*navbar items*/
+li 
+{
+    font-size: 20px;
+    margin-left: 20px;
+    font-style: italic;
+  
+}
+li:hover{
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.629);
+    transition: 0.9s;
+    border-radius:30px ;
+}
+
+.active{
+    border-radius: 7px ;
+}
+
+/*navbar over slide show*/
+
+.dropdown-item:hover{
+    transition: 0.5s;
+   background-color:cadetblue;
+    
+        
+}
+
+
+.third_sectio{
+    background-image: url("../img/pexels-designecologist-1248583.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    opacity: 0.8;
+    padding : 80px 80px 0px 0px;
+    height: 650px;
+    
+}
+#slides{
+    margin: 100px 0px 100px 0px;
+    
+}
+.footer{
+    height: 300px;
+    margin-top: 50px;
+    background-color:#E3E5E1;
+}
+.about{
+    background: url("../img/1.jpg") no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+    margin: 70px;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 140px;
+    box-shadow: 10px 10px 8px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #677423;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #00999c;
+}
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+    .my_nav{
+        height: 120px;
+      }
+    }
+.prod h5{
+    font-size: 60px;
+    font-family:serif;
+    color:black;
+    opacity: .8;
+    text-align: center;
+
+}
+.row2{
+    background-color: #fdfdfd;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.3);
+    padding: 50px;
+    margin: 0px 200px 0px 200px ;
+    margin-top: 200px;
+    
+}
+
+
+  
+.service_icon {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #fff;
+  }
+
+  input[type="file"] {
+    padding: 20px 0px 40px 30px;
+    color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+    display:flex;
+    
+    
+  }
+  
+.styled-button {
+    background-color: #007bff; /* Blue color, you can change it */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  /* Hover effect */
+.styled-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+  }
+  
+h1 {
+    color: #333;
+  }

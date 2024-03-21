@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaaVi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" type="text/css" href="css/main.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top my_nav">
+        <div class="container">
+          <span class="navbar-brand logo " href="index.html" ><h4><span style="color: #f33131;">N</span>aa<span style="color: #f33131;">V</span>i</h4></span>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html"><h6 style="color: white;">HOME</h6></a></li>
+              <li class="nav-item "><a class="nav-link " href="#Update"><h6 style="color: white;">Update</h6></a></li>
+              <li class="nav-item "><a class="nav-link " href="#box"><h6 style="color: white;">Send Massage</h6></a></li>
+             
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <!--theEndOfNavBar-->
+       <!--theSlideShow--> 
+      
+         <div class="first_section">
+          <img src="img/pexels-vraj-shah-638479.jpg" class="d-block w-100"  height="650px">
+          <div class="carousel-caption">
+              
+          </div>
+         </div>   
+        
+               
+      <!--theEND_of control_carousel-->  
+      <!--the icon section-->
+      <div class="service_icon" id="Update">
+        <div class="container-fluid">
+          <div class="row row2 justify-content-center"> <!-- Added justify-content-center -->
+            <div class="col-lg-4 col-md-12  icon">
+              <form  method="post" action="script.php" enctype="multipart/form-data" class="form-group m-4">
+                <label>   
+                  <input type="file"  name="file" accept=".hex" id="fileInput" placeholder="Upload file">  
+                </label>
+                <div class="button-container"> <!-- Added a container for the button -->
+                  <input type="submit"  class="styled-button" placeholder="Upload ">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!--the end of icon section--> 
+      <!--the product carsol section-->     
+      </div>
+      
+<!--the login form-->
+<div class="third_sectio">
+  <div class="container" >
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <label><?php echo $contents; ?></label>
+        </div>
+
+
+      </div>
+  </div>
+</div>   
+<div class="about">
+  <div class="inner-section" data-aos="fade-left"
+  data-aos-easing="linear"
+  data-aos-duration="1000">
+      <h1>About Us</h1>
+      <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Doloribus velit ducimus, enim inventore earum, eligendi 
+          nostrum pariatur necessitatibus eius dicta a voluptates sit 
+          deleniti autem error eos totam
+           nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+      </p>
+      <div class="skills">
+          <button>Contact Us</button>
+      </div>
+  </div>
+</div>
+<div class="footer"></div>
+<script src="js/main.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
